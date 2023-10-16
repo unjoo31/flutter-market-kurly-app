@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_market_kurly_app/screens/components/default_button.dart';
+import 'package:flutter_market_kurly_app/screens/signin/signin_screen.dart';
 
 class MyKurlyHeader extends StatelessWidget {
   const MyKurlyHeader({super.key});
@@ -33,7 +34,9 @@ class MyKurlyHeader extends StatelessWidget {
               padding: const EdgeInsets.all(20),
               child: DefaultButton(
                 text: "로그인/회원가입",
-                press: () {},
+                press: () {
+                  Navigator.pushNamed(context, SignInScreen.routeName);
+                },
               ),
             ),
             Spacer(),
