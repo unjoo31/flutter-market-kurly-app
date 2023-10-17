@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_market_kurly_app/constants.dart';
 import 'package:flutter_market_kurly_app/screens/components/custom_actions.dart';
+import 'package:flutter_market_kurly_app/screens/home/components/benefit_page.dart';
+import 'package:flutter_market_kurly_app/screens/home/components/kurly_page.dart';
+import 'package:flutter_market_kurly_app/screens/home/components/new_product_page.dart';
+import 'package:flutter_market_kurly_app/screens/home/components/thrifty_shopping_page.dart';
 import 'package:flutter_market_kurly_app/theme.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -43,6 +47,14 @@ class HomeScreen extends StatelessWidget {
             ),
             preferredSize: Size.fromHeight(42),
           ),
+        ),
+        body: TabBarView(
+          children: [
+            KurlyPage(),
+            NewProductPage(),
+            BenefitPage(),
+            ThrifyShoppingPage(),
+          ],
         ),
       ),
     );

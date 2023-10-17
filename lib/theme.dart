@@ -26,4 +26,14 @@ TextTheme textTheme() {
     bodyLarge: GoogleFonts.nanumGothic(fontSize: 15.0),
     bodyMedium: GoogleFonts.nanumGothic(fontSize: 14.0),
   );
+
+  // return TextTheme(
+  //   headline1:
+  //   GoogleFonts.nanumGothic(fontSize: 18.0, fontWeight: FontWeight.bold),
+  //   headline2:
+  //   GoogleFonts.nanumGothic(fontSize: 16.0, fontWeight: FontWeight.bold),
+  //   subtitle1: GoogleFonts.nanumGothic(fontSize: 16.0),
+  //   bodyText1: GoogleFonts.nanumGothic(fontSize: 15.0),
+  //   bodyText2: GoogleFonts.nanumGothic(fontSize: 14.0),
+  // );
 }
